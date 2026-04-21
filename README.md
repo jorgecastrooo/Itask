@@ -86,7 +86,7 @@ python -m uvicorn main:app --reload
 
 Aceda a http://127.0.0.1:8000/docs para testar a API.
 
-![FastAPI Docs](./imagens/2.png)
+![FastAPI Docs](./Imagens/2.png)
 
 > **Nota:** Na imagem aparece apenas http://127.0.0.1:8000; deve adicionar `/docs` no browser.
 
