@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# <img src="./DDM_LD_D12-main/DDM_LD_D12-main/src/Imagens/a-flat-minimalist-icon-illustration-repr_pVGu8W13QW-pw9UZ0TkNWA_WwUOozHsRceSKW2ClpyQLA-removebg-preview.png" alt="iTask Icon" width="90" style="vertical-align: middle;"> iTask - Sistema de Gestão de Tarefas (Kanban) 
+# <img src="./DDM_LD_D12-main/DDM_LD_D12-main/src/imagens/a-flat-minimalist-icon-illustration-repr_pVGu8W13QW-pw9UZ0TkNWA_WwUOozHsRceSKW2ClpyQLA-removebg-preview.png" alt="iTask Icon" width="90" style="vertical-align: middle;"> iTask - Sistema de Gestão de Tarefas (Kanban) 
 
 O **iTask** é uma aplicação web interna para gestão de tarefas atribuídas aos programadores, baseada no conceito **Kanban**, com as listas clássicas: **"ToDo"**, **"Doing"** e **"Done"**. A aplicação permite uma gestão rigorosa das tarefas, promove a organização do trabalho em equipa e possibilita a análise estatística da produtividade.
 
