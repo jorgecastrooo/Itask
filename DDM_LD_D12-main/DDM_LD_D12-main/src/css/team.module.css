@@ -1,0 +1,325 @@
+/* src/css/team.module.css */
+.teamView {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  color: #e0e0e0;
+  min-height: 600px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.title {
+  margin: 0;
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.statNumber {
+  color: #4cdb94ac;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.statLabel {
+  color: #888;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.memberCard {
+  background: #2d2d2d;
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  border: 1px solid #444;
+}
+
+.memberCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-color: #4cdb94ac;
+}
+
+.currentUser {
+  border: 2px solid #4cdb94ac;
+  background: linear-gradient(135deg, #2d2d2d 0%, rgba(76, 219, 148, 0.1) 100%);
+}
+
+.gestorCard {
+  border-left: 4px solid #4cdb94ac;
+}
+
+.currentUserBadge {
+  position: absolute;
+  top: -10px;
+  right: 1rem;
+  background: #4cdb94ac;
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 2px 8px rgba(76, 219, 148, 0.4);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4cdb94ac, #2db572ac);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.userBasicInfo {
+  flex: 1;
+}
+
+.userName {
+  margin: 0 0 0.5rem 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.userMeta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.userType {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.userType.gestor {
+  background: rgba(76, 219, 148, 0.2);
+  color: #4cdb94ac;
+  border: 1px solid #4cdb94ac;
+}
+
+.userType.programador {
+  background: rgba(107, 114, 128, 0.2);
+  color: #d1d5db;
+  border: 1px solid #6b7280;
+}
+
+.experienceLevel {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(107, 114, 128, 0.2);
+}
+
+.contactInfo {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #363636;
+  border-radius: 8px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #ccc;
+}
+
+.contactItem:last-child {
+  margin-bottom: 0;
+}
+
+.contactItem i {
+  width: 16px;
+  color: #4cdb94ac;
+}
+
+.departmentSection {
+  margin-bottom: 1rem;
+}
+
+.departmentBadge {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.managerInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(76, 219, 148, 0.1);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #4cdb94ac;
+}
+
+.managerInfo i {
+  color: #4cdb94ac;
+}
+
+.statsSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #363636;
+  border-radius: 8px;
+}
+
+.taskStats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.taskStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.taskStatNumber {
+  color: #4cdb94ac;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.taskStatLabel {
+  color: #888;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.statusIndicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.cardActions {
+  display: flex;
+  justify-content: center;
+}
+
+.viewProfileButton {
+  background: rgba(76, 219, 148, 0.1);
+  border: 1px solid #4cdb94ac;
+  color: #4cdb94ac;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.viewProfileButton:hover {
+  background: #2db572ac;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .teamView {
+    padding: 1rem;
+  }
+  
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .stats {
+    justify-content: space-around;
+  }
+  
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cardHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .userMeta {
+    justify-content: center;
+  }
+  
+  .statsSection {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .taskStats {
+    width: 100%;
+    justify-content: space-around;
+  }
+}

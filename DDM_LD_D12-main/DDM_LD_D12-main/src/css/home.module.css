@@ -1,0 +1,172 @@
+.home {
+  display: flex;
+  min-height: 100vh;
+  background: #0f0f0f;
+}
+
+.mainContent {
+  flex: 1;
+  margin-left: 280px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+  background: #0f0f0f;
+}
+
+.pageSubtitle {
+  margin-top: 0.5rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
+.mainContent.collapsed {
+  margin-left: 70px;
+}
+
+.mainHeader {
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.welcomeSection h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.welcomeSubtitle {
+  margin: 0.25rem 0 0 0;
+  color: #00ff99;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.headerActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actionButton {
+  background: #2d2d2d;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  color: #ccc;
+}
+
+.actionButton:hover {
+  background: #00ff99;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.contentArea {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background: #0f0f0f;
+}
+
+.viewContent {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #e0e0e0;
+}
+
+.viewContent h2 {
+  margin: 0 0 1rem 0;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.viewContent p {
+  margin: 0;
+  color: #888;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    margin-left: 70px;
+  }
+
+  .mainContent.collapsed {
+    margin-left: 70px;
+  }
+
+  .contentArea {
+    padding: 1rem;
+  }
+
+  .mainHeader {
+    padding: 1rem;
+  }
+
+  .welcomeSection h1 {
+    font-size: 1.25rem;
+  }
+
+  .welcomeSubtitle {
+    font-size: 0.9rem;
+  }
+
+  .viewContent {
+    padding: 2rem 1rem;
+  }
+
+  .viewContent h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Adiciona ao home.module.css */
+.roleToggleButton {
+  background: #f59e0b;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.roleToggleButton:hover {
+  background: #d97706;
+  transform: translateY(-1px);
+}

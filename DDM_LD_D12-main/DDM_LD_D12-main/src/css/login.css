@@ -1,0 +1,231 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  font-family: "Georgia", serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url("../imagens/2148430867.jpg") no-repeat center center/cover;
+  font-family: "Georgia", serif;
+  overflow: hidden;
+}
+
+.login-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+/* ===== CARTÃO DE LOGIN ===== */
+.login-card {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  background: rgba(40, 40, 45, 0.95);
+  border-radius: 12px;
+  padding: 36px 28px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  z-index: 1;
+  animation: fadeInScale 0.6s ease forwards;
+}
+
+/* ===== CONTEÚDO ===== */
+.login-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #e5e5e5;
+  padding-top: 110px; /* espaço para o logótipo */
+}
+
+/* ===== LOGO NO TOPO ===== */
+.login-content::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 110px;
+  background: url("../imagens/a-flat-minimalist-icon-illustration-repr_pVGu8W13QW-pw9UZ0TkNWA_WwUOozHsRceSKW2ClpyQLA-removebg-preview.png") no-repeat center center / contain;
+}
+
+/* ===== TÍTULOS E TEXTOS ===== */
+.login-welcome {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 0.3rem;
+  animation: slideDownFade 0.5s ease forwards;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 0.5rem;
+  animation: slideDownFade 0.6s ease forwards;
+}
+
+.login-subtitle {
+  font-size: 1.3rem;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+  animation: slideDownFade 0.8s ease forwards;
+}
+
+/* ===== FORMULÁRIO ===== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  animation: fadeInSlideUp 0.8s ease forwards;
+}
+
+.input-group {
+  text-align: left;
+  animation: fadeInSlideUp 1s ease forwards;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 0.3rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: rgba(255, 255, 255, 0.05);
+  color: #eee;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #999;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+  outline: none;
+}
+
+/* ===== BOTÃO ===== */
+.login-button {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  background: #555;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  animation: fadeInSlideUp 1.2s ease forwards;
+}
+
+.login-button:hover {
+  background: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* ===== FOOTER ===== */
+.login-footer {
+  margin-top: 1.5rem;
+  color: #aaa;
+  font-size: 0.9rem;
+  text-align: center;
+  animation: fadeIn 1.4s ease forwards;
+}
+
+.register-link {
+  color: #ccc;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.register-link:hover {
+  color: #fff;
+}
+
+/* ===== PASSWORD ===== */
+.password-group {
+  position: relative;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 2.5rem; 
+}
+
+.password-wrapper i {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.password-wrapper i:hover {
+  color: #ccc;
+}
+
+/* ===== ANIMAÇÕES ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDownFade {
+  from { transform: translateY(-10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInSlideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

@@ -1,0 +1,663 @@
+.userManagement {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  color: #e0e0e0;
+  min-height: 600px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.title {
+  margin: 0;
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.createButton {
+  background: #128758ac;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.createButton:hover {
+  background: #0a4f34ac;
+  transform: translateY(-1px);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  background: #2d2d2d;
+  border-radius: 8px;
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tab:hover {
+  background: #363636;
+  color: #fff;
+}
+
+.activeTab {
+  background: #128758ac;
+  color: #fff;
+}
+
+.pedidosBadge {
+  background: #ef4444;
+  color: white;
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Users List */
+.usersList {
+  background: #2d2d2d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.usersTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #2d2d2d;
+}
+
+.usersTable th {
+  background: #333;
+  color: #32ad7cac;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.usersTable td {
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+  color: #e0e0e0;
+}
+
+.usersTable tr:hover {
+  background: #363636;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.userName {
+  font-weight: 600;
+  color: #fff;
+}
+
+.gestorInfo {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.userType {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.userType.gestor {
+  background: rgba(59, 130, 246, 0.2);
+  color: #93c5fd;
+  border: 1px solid #3b82f6;
+}
+
+.userType.programador {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border: 1px solid #10b981;
+}
+
+.experienceLevel {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.experienceLevel.júnior {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fcd34d;
+  border: 1px solid #f59e0b;
+}
+
+.experienceLevel.sénior {
+  background: rgba(139, 92, 246, 0.2);
+  color: #c4b5fd;
+  border: 1px solid #8b5cf6;
+}
+
+.department {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(107, 114, 128, 0.2);
+  color: #d1d5db;
+  border: 1px solid #6b7280;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editButton {
+  background: #f59e0b;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.editButton:hover {
+  background: #d97706;
+  transform: scale(1.05);
+}
+
+.deleteButton {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.deleteButton:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
+
+/* Pedidos Section */
+.pedidosSection {
+  background: #2d2d2d;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.pedidosGroup {
+  margin-bottom: 2rem;
+}
+
+.pedidosGroup:last-child {
+  margin-bottom: 0;
+}
+
+.pedidosTitle {
+  margin: 0 0 1rem 0;
+  color: #4bb58a;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pedidosList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pedidoCard {
+  background: #363636;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 4px solid #128758ac;
+}
+
+.pedidoProcessado {
+  opacity: 0.7;
+  border-left-color: #6b7280;
+}
+
+.pedidoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #444;
+}
+
+.pedidoUserInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.pedidoUser {
+  font-weight: 600;
+  color: #fff;
+}
+
+.pedidoDate {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.pedidoStatusPending {
+  background: #f59e0b;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.pedidoStatus {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.statusAprovado {
+  background: #10b981;
+  color: white;
+}
+
+.statusRecusado {
+  background: #ef4444;
+  color: white;
+}
+
+.pedidoContent {
+  margin-bottom: 1rem;
+}
+
+.alteracoes h4 {
+  margin: 0 0 0.75rem 0;
+  color: #ccc;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.alteracoesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.alteracaoItem {
+  background: #2d2d2d;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.campoInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.campoNome {
+  color: #31ba75;
+  font-weight: 600;
+  font-size: 0.875rem;
+  min-width: 80px;
+}
+
+.campoValorAtual {
+  color: #888;
+  font-size: 0.875rem;
+  text-decoration: line-through;
+}
+
+.campoValorNovo {
+  color: #10b981;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.campoValor {
+  color: #ccc;
+  font-size: 0.875rem;
+}
+
+.fa-arrow-right {
+  color: #6b7280;
+}
+
+.justificativa {
+  background: #2d2d2d;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.justificativa strong {
+  color: #ccc;
+  font-size: 0.875rem;
+}
+
+.justificativa p {
+  margin: 0.5rem 0 0 0;
+  color: #888;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.pedidoActions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.recusarButton {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.recusarButton:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+.aprovarButton {
+  background: #10b981;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.aprovarButton:hover {
+  background: #059669;
+  transform: translateY(-1px);
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  color: #888;
+}
+
+.emptyState i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+.emptyState h3 {
+  margin: 0 0 0.5rem 0;
+  color: #ccc;
+}
+
+.emptyState p {
+  margin: 0;
+  color: #888;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.modal {
+  background: #1a1a1a;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #333;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #333;
+  background: #2d2d2d;
+  border-radius: 12px 12px 0 0;
+}
+
+.modalHeader h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+  background: #333;
+  color: #fff;
+}
+
+.form {
+  padding: 2rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  color: #ccc;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.input, .select {
+  background: #2d2d2d;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input:focus, .select:focus {
+  outline: none;
+  border-color: #0a4f34ac;
+  box-shadow: 0 0 0 2px rgba(59, 246, 121, 0.2);
+}
+
+.input:hover, .select:hover {
+  border-color: #555;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+}
+
+.cancelButton {
+  background: #937667;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cancelButton:hover {
+  background: #744d4d;
+}
+
+.saveButton {
+  background: #128758ac;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.saveButton:hover {
+  background: #0a4f34ac;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .userManagement {
+    padding: 1rem;
+  }
+  
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .createButton {
+    justify-content: center;
+  }
+  
+  .tabs {
+    flex-direction: column;
+  }
+  
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .formActions {
+    flex-direction: column;
+  }
+  
+  .usersTable {
+    font-size: 0.875rem;
+  }
+  
+  .usersTable th,
+  .usersTable td {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .modal {
+    max-height: 95vh;
+  }
+  
+  .modalHeader {
+    padding: 1rem 1.5rem;
+  }
+  
+  .form {
+    padding: 1.5rem;
+  }
+  
+  .campoInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .pedidoActions {
+    flex-direction: column;
+  }
+}
