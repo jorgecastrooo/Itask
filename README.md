@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# <img src="./DDM_LD_D12-main/DDM_LD_D12-main/src/imagens/a-flat-minimalist-icon-illustration-repr_pVGu8W13QW-pw9UZ0TkNWA_WwUOozHsRceSKW2ClpyQLA-removebg-preview.png" alt="iTask Icon" width="90" style="vertical-align: middle;"> iTask - Sistema de Gestão de Tarefas (Kanban) 
+# <img src="./DDM_LD_D12-main/DDM_LD_D12-main/src/Imagens/a-flat-minimalist-icon-illustration-repr_pVGu8W13QW-pw9UZ0TkNWA_WwUOozHsRceSKW2ClpyQLA-removebg-preview.png" alt="iTask Icon" width="90" style="vertical-align: middle;"> iTask - Sistema de Gestão de Tarefas (Kanban) 
 
 O **iTask** é uma aplicação web interna para gestão de tarefas atribuídas aos programadores, baseada no conceito **Kanban**, com as listas clássicas: **"ToDo"**, **"Doing"** e **"Done"**. A aplicação permite uma gestão rigorosa das tarefas, promove a organização do trabalho em equipa e possibilita a análise estatística da produtividade.
 
@@ -90,7 +90,7 @@ Aceda a http://127.0.0.1:8000/docs para testar a API.
 
 > **Nota:** Na imagem aparece apenas http://127.0.0.1:8000; deve adicionar `/docs` no browser.
 
-![FastAPI Docs](./imagens/3.png)
+![FastAPI Docs](./Imagens/3.png)
 
 ### ⚛️ Frontend (React)
 
@@ -104,7 +104,7 @@ npm run dev
 
 Aceda a http://localhost:3000/ para testar a aplicação.
 
-![Aplicação React](./imagens/5.jpg)
+![Aplicação React](./Imagens/5.jpg)
 
 > **Nota:** A porta pode ser diferente (ex: 3000, 5173). Aceda à que o terminal indicar.
 
@@ -133,25 +133,25 @@ Caso o username não exista ou a password esteja incorreta, será informado de q
 
 Se os dados estiverem corretos, o sistema redireciona para a página Kanban correspondente ao perfil do utilizador.
 
-![Login](./imagens/6.jpg)
+![Login](./Imagens/6.jpg)
 
 #### 👤 2. Perfil do Utilizador
 
 Nesta página, o utilizador autenticado pode visualizar todas as suas informações (nome, username, tipo, departamento, etc.).  
 É aqui também que pode solicitar alterações aos seus dados pessoais.
 
-![Perfil do Utilizador](./imagens/12.png)
+![Perfil do Utilizador](./Imagens/12.png)
 
 #### 👨‍👩‍👧‍👦 3. Equipa
 
 **Visão do Gestor:**  
 O gestor pode ver toda a sua equipa, incluindo os perfis de cada membro (programadores associados).
-![Equipa](./imagens/14.png)
+![Equipa](./Imagens/14.png)
 
 **Visão do Programador:**  
 O programador pode ver os restantes membros da equipa, mas sem permissões de edição.
 
-![Equipa](./imagens/10.png)
+![Equipa](./Imagens/10.png)
 
 #### 🚪 4. Terminar Sessão
 
@@ -178,7 +178,7 @@ Campos obrigatórios:
 Um gestor pode criar outros gestores ou programadores.  
 Na tabela de utilizadores, existem botões de ação para editar e eliminar cada registo.
 
-![Gestão de Utilizadores](./imagens/7.png)
+![Gestão de Utilizadores](./Imagens/7.png)
 
 ##### 📝 5.1 Pedidos de Alteração de Dados
 
@@ -194,7 +194,7 @@ Esta secção permite gerir os pedidos de alteração de informações pessoais 
 
 Esta abordagem garante um fluxo de trabalho controlado e seguro, permitindo que os gestores revisem e aprovem todas as mudanças de informações dos colaboradores de forma centralizada e rastreável.
 
-![ Pedidos de Alteração de Dados](./imagens/8.png)
+![ Pedidos de Alteração de Dados](./Imagens/8.png)
 
 #### 📋 6. Gestão de Tarefas
 
@@ -207,7 +207,7 @@ Nesta secção, o gestor pode:
 - Definir datas previstas de início e fim
 - Visualizar o estado de cada tarefa (Por fazer, Em progresso, Concluído)
 
-![Gestão de Tarefas](./imagens/11.jpg)
+![Gestão de Tarefas](./Imagens/11.jpg)
 
 #### 🏷️ 7. Tipos de Tarefas
 
@@ -218,7 +218,7 @@ Apenas o gestor pode gerir os tipos de tarefas disponíveis no sistema:
 - Eliminar tipos
 - Visualizar lista completa de tipos
 
-![Tipos de Tarefas](./imagens/9.jpg)
+![Tipos de Tarefas](./Imagens/9.jpg)
 
 
 ---
@@ -239,7 +239,7 @@ O nome do utilizador logado está visível no topo.
 - Mover tarefas entre colunas (respeitando regras de negócio)
 - Ver detalhes de qualquer tarefa (ícone "olhinho" no canto superior direito)
 
-![Kanban](./imagens/15.jpg)
+![Kanban](./Imagens/15.jpg)
 
 #### 📝 10. Minhas Tarefas
 
@@ -249,7 +249,7 @@ O programador tem uma página dedicada onde pode:
 - Filtrar por: Todas, Por Fazer, Em Progresso ou Concluídas
 - Ver o tempo que demorou em cada tarefa concluída
 
-![Minhas Tarefas](./imagens/16.jpg)
+![Minhas Tarefas](./Imagens/16.jpg)
 
 ---
 
@@ -262,7 +262,7 @@ Projeto desenvolvido por:
 
 Turma: DDM
 
-![ISTEC](./imagens/ISTEC.png)
+![ISTEC](./Imagens/ISTEC.png)
 =======
 # Itask
 >>>>>>> 01b1ccba1a81d94d799e17a9ff80af9326721b3e
