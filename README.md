@@ -70,7 +70,7 @@ O projeto foi construído com as seguintes ferramentas:
 1. Abra o **SQL Server Management Studio (SSMS)**.
 2. Abra o ficheiro `DBITask.sql` e execute para criar a base de dados.
 
-![Criar Base Dados](./imagens/1.png)
+![Criar Base Dados](./Imagens/1.png)
 
 > **Nota:** Altere a string de ligação no ficheiro `Projeto LD\DDM_LD_D12BE-main\DDM_LD_D12BE-main` conforme a sua configuração.
 
